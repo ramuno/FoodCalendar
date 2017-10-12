@@ -12,6 +12,12 @@
 		3F8369151F15C33100830F57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8369131F15C33100830F57 /* Main.storyboard */; };
 		3F8369171F15C33100830F57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F8369161F15C33100830F57 /* Assets.xcassets */; };
 		3F83691A1F15C33100830F57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F8369181F15C33100830F57 /* LaunchScreen.storyboard */; };
+		3FA185711F219A16002FD75F /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA185701F219A16002FD75F /* BalanceViewController.swift */; };
+		3FA185731F21C03B002FD75F /* CamCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA185721F21C03B002FD75F /* CamCapture.swift */; };
+		3FA185751F21C64C002FD75F /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA185741F21C64C002FD75F /* CameraViewController.swift */; };
+		3FA185781F21C98D002FD75F /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA185771F21C98D002FD75F /* Photos.framework */; };
+		3FC0EA841F1B017C00727A51 /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC0EA831F1B017C00727A51 /* DateManager.swift */; };
+		3FC0EA861F1B019700727A51 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC0EA851F1B019700727A51 /* CalendarCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		3F8369161F15C33100830F57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F8369191F15C33100830F57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F83691B1F15C33100830F57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FA185701F219A16002FD75F /* BalanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceViewController.swift; sourceTree = "<group>"; };
+		3FA185721F21C03B002FD75F /* CamCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CamCapture.swift; sourceTree = "<group>"; };
+		3FA185741F21C64C002FD75F /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		3FA185771F21C98D002FD75F /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		3FC0EA831F1B017C00727A51 /* DateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
+		3FC0EA851F1B019700727A51 /* CalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA185781F21C98D002FD75F /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +53,7 @@
 			children = (
 				3F83690E1F15C33100830F57 /* FoodCalendar */,
 				3F83690D1F15C33100830F57 /* Products */,
+				3FA185761F21C98D002FD75F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +71,24 @@
 				3F83690F1F15C33100830F57 /* AppDelegate.swift */,
 				3F8369111F15C33100830F57 /* ViewController.swift */,
 				3F8369131F15C33100830F57 /* Main.storyboard */,
+				3FA185701F219A16002FD75F /* BalanceViewController.swift */,
+				3FA185741F21C64C002FD75F /* CameraViewController.swift */,
 				3F8369161F15C33100830F57 /* Assets.xcassets */,
 				3F8369181F15C33100830F57 /* LaunchScreen.storyboard */,
 				3F83691B1F15C33100830F57 /* Info.plist */,
+				3FC0EA831F1B017C00727A51 /* DateManager.swift */,
+				3FC0EA851F1B019700727A51 /* CalendarCell.swift */,
+				3FA185721F21C03B002FD75F /* CamCapture.swift */,
 			);
 			path = FoodCalendar;
+			sourceTree = "<group>";
+		};
+		3FA185761F21C98D002FD75F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FA185771F21C98D002FD75F /* Photos.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +123,7 @@
 				TargetAttributes = {
 					3F83690B1F15C33100830F57 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 5J3T7PP7ZF;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,6 +165,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F8369121F15C33100830F57 /* ViewController.swift in Sources */,
+				3FC0EA841F1B017C00727A51 /* DateManager.swift in Sources */,
+				3FA185711F219A16002FD75F /* BalanceViewController.swift in Sources */,
+				3FC0EA861F1B019700727A51 /* CalendarCell.swift in Sources */,
+				3FA185751F21C64C002FD75F /* CameraViewController.swift in Sources */,
+				3FA185731F21C03B002FD75F /* CamCapture.swift in Sources */,
 				3F8369101F15C33100830F57 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,7 +293,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5J3T7PP7ZF;
 				INFOPLIST_FILE = FoodCalendar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.school..FoodCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +307,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5J3T7PP7ZF;
 				INFOPLIST_FILE = FoodCalendar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.school..FoodCalendar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,6 +336,7 @@
 				3F8369201F15C33100830F57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
